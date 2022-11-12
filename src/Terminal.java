@@ -46,6 +46,7 @@ public class Terminal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        envoi_5 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         portSelection = new javax.swing.JComboBox<>();
         btnConnexion = new javax.swing.JButton();
@@ -56,6 +57,18 @@ public class Terminal extends javax.swing.JFrame {
         texteReception = new javax.swing.JTextField();
         infoText = new javax.swing.JLabel();
         btnDeconnexion = new javax.swing.JButton();
+        envoi_2 = new javax.swing.JButton();
+        envoi_3 = new javax.swing.JButton();
+        envoi_0 = new javax.swing.JButton();
+        envoi_1 = new javax.swing.JButton();
+
+        envoi_5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        envoi_5.setText("\"1\"");
+        envoi_5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                envoi_5ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -104,6 +117,38 @@ public class Terminal extends javax.swing.JFrame {
             }
         });
 
+        envoi_2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        envoi_2.setText("\"2\"");
+        envoi_2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                envoi_2ActionPerformed(evt);
+            }
+        });
+
+        envoi_3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        envoi_3.setText("\"3\"");
+        envoi_3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                envoi_3ActionPerformed(evt);
+            }
+        });
+
+        envoi_0.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        envoi_0.setText("\"0\"");
+        envoi_0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                envoi_0ActionPerformed(evt);
+            }
+        });
+
+        envoi_1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        envoi_1.setText("\"1\"");
+        envoi_1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                envoi_1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -116,25 +161,34 @@ public class Terminal extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(titreReception)
-                                    .addComponent(titreTransmission)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(textEmission, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnEnvoi)))
-                                .addGap(198, 198, 198))
+                                    .addComponent(titreTransmission))
+                                .addGap(198, 459, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(texteReception, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDeconnexion))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnConnexion))
+                                .addComponent(btnDeconnexion))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(textEmission, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnEnvoi)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(envoi_0)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(envoi_3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(53, 53, 53)
                         .addComponent(infoText, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(portSelection, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(21, 21, 21))
+                        .addComponent(portSelection, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnConnexion)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(envoi_1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(envoi_2)))))
+                .addGap(10, 10, 10))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,12 +201,22 @@ public class Terminal extends javax.swing.JFrame {
                         .addComponent(infoText, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnConnexion, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(titreTransmission)
-                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(titreTransmission))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(envoi_2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(envoi_1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnEnvoi, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-                    .addComponent(textEmission))
+                    .addComponent(btnEnvoi)
+                    .addComponent(textEmission)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(envoi_3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(envoi_0, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(titreReception)
                 .addGap(18, 18, 18)
@@ -167,7 +231,7 @@ public class Terminal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(39, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -176,7 +240,7 @@ public class Terminal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -193,7 +257,7 @@ public class Terminal extends javax.swing.JFrame {
             portComm.setParity(0);
             portComm.setNumStopBits(1);
             portComm.openPort();
-
+            portComm.setComPortTimeouts(SerialPort.TIMEOUT_READ_BLOCKING, 1000, 0);
             if (portComm.isOpen()) {
 
                 infoText.setForeground(Color.BLUE);
@@ -224,12 +288,32 @@ public class Terminal extends javax.swing.JFrame {
                 if (event.getEventType() != SerialPort.LISTENING_EVENT_DATA_AVAILABLE) {
                     return;
                 }
+
+                /*
                 byte[] newData = new byte[portComm.bytesAvailable()];
                 int numRead = portComm.readBytes(newData, newData.length);
                 System.out.println("Read " + numRead + " bytes:" + new String(newData, StandardCharsets.UTF_8));
                 texteReception.setText(new String(newData, StandardCharsets.UTF_8));
+              //  portComm.flushIOBuffers();
+                 */
+                byte[] readBuffer = new byte[100];
+
+                int numRead = portComm.readBytes(readBuffer,
+                        readBuffer.length);
+
+                System.out.print("Read " + numRead + " bytes -");
+
+                //Convert bytes to String
+                String S = new String(readBuffer, StandardCharsets.UTF_8);
+
+                System.out.println("Received -> " + S);
+                texteReception.setText(new String(readBuffer, StandardCharsets.UTF_8));
+
             }
-        });
+        ;
+    });
+        
+         
 
     }//GEN-LAST:event_btnConnexionActionPerformed
 
@@ -260,6 +344,31 @@ public class Terminal extends javax.swing.JFrame {
         infoText.setForeground(Color.red);
         infoText.setText("Fermeture communication");
     }//GEN-LAST:event_btnDeconnexionActionPerformed
+
+    private void envoi_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envoi_2ActionPerformed
+
+        envoyerData("2");
+
+    }//GEN-LAST:event_envoi_2ActionPerformed
+
+    private void envoi_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envoi_3ActionPerformed
+
+        envoyerData("3");
+    }//GEN-LAST:event_envoi_3ActionPerformed
+
+    private void envoi_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envoi_0ActionPerformed
+
+        envoyerData("0");
+    }//GEN-LAST:event_envoi_0ActionPerformed
+
+    private void envoi_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envoi_5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_envoi_5ActionPerformed
+
+    private void envoi_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_envoi_1ActionPerformed
+
+        envoyerData("1");
+    }//GEN-LAST:event_envoi_1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,10 +405,16 @@ public class Terminal extends javax.swing.JFrame {
         });
     }
 
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnConnexion;
     private javax.swing.JButton btnDeconnexion;
     private javax.swing.JButton btnEnvoi;
+    private javax.swing.JButton envoi_0;
+    private javax.swing.JButton envoi_1;
+    private javax.swing.JButton envoi_2;
+    private javax.swing.JButton envoi_3;
+    private javax.swing.JButton envoi_5;
     private javax.swing.JLabel infoText;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JComboBox<String> portSelection;
@@ -308,4 +423,20 @@ public class Terminal extends javax.swing.JFrame {
     private javax.swing.JLabel titreReception;
     private javax.swing.JLabel titreTransmission;
     // End of variables declaration//GEN-END:variables
+
+    private void envoyerData(String data) {
+
+        outputStream = portComm.getOutputStream();
+        try {
+
+            outputStream.write(data.getBytes());
+
+        } catch (IOException e) {
+
+            infoText.setForeground(Color.red);
+            infoText.setText("Erreur de transmission");
+
+        }
+
+    }
 }
